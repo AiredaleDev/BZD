@@ -1,0 +1,3 @@
+[submodule "boot/Sabaton"]
+	path = boot/Sabaton
+	url = git@github.com:FlorenceOS/Sabaton.git
