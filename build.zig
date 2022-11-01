@@ -2,7 +2,7 @@ const std = @import("std");
 
 pub fn build(b: *std.build.Builder) void {
     const mode = b.standardReleaseOptions();
-    const target = .{ .cpu_arch = .aarch64, .os_tag = .freestanding };
+    const target = .{ .cpu_arch = .i386, .os_tag = .freestanding };
 
     const os = b.addExecutable("os.elf", "src/kernel.zig");
     os.setLinkerScriptPath(.{ .path = "linker.ld" });
